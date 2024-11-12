@@ -11,10 +11,158 @@
         <div class="container">
             <div class="header-wrapper">
                 <h1 class="global-title">Company</h1>
-                <nav></nav>
+                <nav class="navigation">
+                    <ul class="navigation-content">
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#info'" name="nav">
+                                <span>Главная</span>
+                            </label>
+                        </li>
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#about'" name="nav">
+                                <span>О нас</span>
+                            </label>
+                        </li>
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#choose'" name="nav">
+                                <span>Технологии</span>
+                            </label>
+                        </li>
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" name="nav">
+                                <span>Карьера</span>
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
+    <main class="main">
+        <section id="info" class="info-block">
+            <div class="container">
+                <div class="info-content-wrapper">
+                    <div class="info-content-block">
+                        <h2 class="info-title">Откройте новый опыт покупок</h2>
+                        <p class="info-text">Идеальная посадка с первой примерки — виртуальная 3D-технология для вашего удобства и уверенности</p>
+                    </div>
+                    <div class="info-content-block info-content-block-wrapper">
+                        <p class="info-content-text">Рады представить вам, инновационный сервис поиска и онлайн примерки одежды на вашем цифровом 3D аватаре!</p>
+                        <button class="info-btn">Попробовать бесплатно</button>
+                    </div>   
+                </div>
+                <div class="info-image-wrapper">
+                    <img class="info-img" src="./images/background.png" alt="background">
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-us">
+            <div class="container">
+                <div class="about-content-wrapper">
+                    <div class="title-content-block">
+                        <h1 class="title">О нас</h1>
+                        <p class="about-subtitle-text subtitle-text">Мы создаём инновационные решения для виртуальной примерки одежды, используя передовые 3D-технологии. Наша цель — упростить выбор и сделать покупки комфортнее для каждого.</p>
+                    </div>
+                    <div class="about-content-block">
+                        <button class="about-btn">Подробнее о нас</button>
+                    </div>
+                </div>
+                <div class="about-items-wrapper">
+                    <div class="about-item">
+                        <img class="about-icon" src="./images/icons/about-icon1.svg" alt="about-icon1">
+                        <div class="about-item-text-block">
+                            <h3 class="about-item-title">Примерка в реальном времени</h3>
+                            <p class="about-item-text">Визуализируйте, как сидит одежда, до покупки.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <img class="about-icon" src="./images/icons/about-icon2.svg" alt="about-icon1">
+                        <div class="about-item-text-block">
+                            <h3 class="about-item-title">Интеграция с ритейлерами</h3>
+                            <p class="about-item-text">Простой процесс внедрения для магазинов.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <img class="about-icon" src="./images/icons/about-icon3.svg" alt="about-icon1">
+                        <div class="about-item-text-block">
+                            <h3 class="about-item-title">Поддержка пользователей</h3>
+                            <p class="about-item-text">Помощь на каждом этапе онлайн-шопинга.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="choose" class="choose">
+            <div class="container">
+                <div class="title-content-block">
+                    <h1 class="title">Почему выбирают нас</h1>
+                    <p class="choose-subtitle-text subtitle-text">Мы создаём технологию, которая изменяет опыт онлайн-шопинга. Наша 3D-примерка помогает клиентам сделать уверенный выбор, избегая лишних возвратов и сомнений. Мы предлагаем решения, которые легко интегрируются в бизнес и дают вашим покупателям новый уровень комфорта.</p>
+                </div>
+                <div class="choose-items-wrapper">
+                    <div class="choose-item-column">
+                        <div class="choose-item choose-item-box choose-item-box-first">
+                            <h2 class="choose-item-title">Инновационные технологии</h2>
+                            <p class="chose-item-text">AI</p>
+                        </div>
+                        <div class="choose-item small-choose-item">
+                            <h2 class="choose-item-title">Доверие брендов</h2>
+                            <button class="choose-btn">Связаться с нами</button>
+                        </div>
+                    </div>
+                    <div class="choose-item-column">
+                        <div class="choose-item iteration">
+                            <h2 class="choose-item-title">Простота интеграции</h2>
+                            <img src="./images/iteration.png" alt="iteration-img" class="iteration-img">
+                        </div>
+                        <div class="choose-item choose-custom-item">
+                            <h2 class="choose-item-title choose-item-custom-title">Поддержка на всех этапах</h2>
+                            <div class="choose-item-inner-content">
+                                <div class="stage">
+                                    <p class="stage-text">Этап 1</p>
+                                </div>
+                                <div class="stage-arrow"></div>
+                                <div class="stage second-stage">
+                                    <p class="stage-text">Этап 2</p>
+                                </div>
+                                <div class="stage-arrow"></div>
+                                <div class="stage third-stage">
+                                    <p class="stage-text">Этап 3</p>
+                                </div>
+                                <div class="stage-arrow"></div>
+                                <div class="stage four-stage">
+                                    <p class="stage-text">Этап 4</p>
+                                </div>
+                                <div class="stage-arrow"></div>
+                                <div class="stage five-stage">
+                                    <p class="stage-text">Этап 5</p>
+                                </div>
+                                <div class="stage-arrow"></div>
+                                <div class="stage six-stage">
+                                    <p class="stage-text">Этап 6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose-item-column">
+                        <div class="choose-item choose-item-box aim-content">
+                            <h2 class="choose-item-title">Высокая точность</h2>
+                            <div class="aim">
+                                <img src="./images/icons/target.svg" alt="target" class="aim-img">
+                            </div>
+                        </div>
+                        <div class="choose-item small-choose-item small-choose-custom-item">
+                            <h2 class="choose-item-title">Адаптация под нужды бизнеса</h2>
+                            <p class="choose-item-text">Доработаем наше приложение до нужных решений</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
