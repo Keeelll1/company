@@ -1174,4 +1174,24 @@ a{
     .footer-content{
         padding: 15px;
     }
+
+    .about-item-title{
+        font-size: 14px;
+    }
+
+    .about-item-text{
+        font-size: 12px;
+    }
+
+    .about-item-text-block{
+        width: 200px;
+    }
+
+    .about-item{
+        justify-content: center;
+    }
+
+    .solution-btn-wrapper{
+        flex-wrap: wrap;
+    }
 }
