@@ -54,3 +54,21 @@ showPopup('.popup-test', '.popup-cross', '.info-btn', '.overlay');
 showPopup('.popup-test', '.popup-cross', '.about-btn', '.overlay');
 showPopup('.popup-test', '.popup-cross', '.choose-btn', '.overlay');
 showPopup('.popup-test', '.popup-cross', '.advantages-btn', '.overlay');
+
+const showBurgerMenu = () => {
+    const openBtn = document.querySelector('.burger-wrapper'),
+        closeBtn = document.querySelector('.burger-cross'),
+        burgerContent = document.querySelector('.burger-menu-content')
+
+    openBtn.addEventListener('click', () => {
+        openBtn.style.display = 'none';
+        burgerContent.style.display = 'flex';
+    })
+
+    closeBtn.addEventListener('click', () => {
+        openBtn.style.display = 'flex';
+        burgerContent.style.display = 'none';
+    })
+}
+
+showBurgerMenu();

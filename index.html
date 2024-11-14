@@ -39,7 +39,43 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
+                <div class="burger-menu">
+                    <div class="burger-wrapper">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                </div>
+                <div class="burger-menu-content">
+                    <img src="./images/icons/cross.svg" alt="cross" class="cross burger-cross">
+                    <ul class="burger-content">
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#info'" name="nav">
+                                <span>Главная</span>
+                            </label>
+                        </li>
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#about'" name="nav">
+                                <span>О нас</span>
+                            </label>
+                        </li>
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#choose'" name="nav">
+                                <span>Технологии</span>
+                            </label>
+                        </li>
+                        <li class="navigation-item">
+                            <label class="custom-radio">
+                                <input type="radio" onclick = "location.href = '#advantages'" name="nav">
+                                <span>Карьера</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>  
         </div>
     </header>
     <main class="main">
@@ -50,7 +86,7 @@
                         <h2 class="info-title">Откройте новый опыт покупок</h2>
                         <p class="info-text">Идеальная посадка с первой примерки — виртуальная 3D-технология для вашего удобства и уверенности</p>
                     </div>
-                    <div class="info-content-block info-content-block-wrapper">
+                    <div class="info-content-block">
                         <p class="info-content-text">Рады представить вам, инновационный сервис поиска и онлайн примерки одежды на вашем цифровом 3D аватаре!</p>
                         <button class="info-btn">Попробовать бесплатно</button>
                     </div>   
@@ -116,7 +152,9 @@
                     <div class="choose-item-column">
                         <div class="choose-item iteration">
                             <h2 class="choose-item-title">Простота интеграции</h2>
-                            <img src="./images/iteration.png" alt="iteration-img" class="iteration-img">
+                            <div class="iteration-img-wrapper">
+                                <img src="./images/iteration.png" alt="iteration-img" class="iteration-img">
+                            </div>
                         </div>
                         <div class="choose-item choose-custom-item">
                             <h2 class="choose-item-title choose-item-custom-title">Поддержка на всех этапах</h2>
@@ -224,7 +262,7 @@
                     <div class="advantages-main-card-wrapper">
                         <p class="advantages-main-card-text">7 <br> Дней Бесплатно</p>
                     </div>
-                    <div class="adwantages-card-content-wrapper">
+                    <div class="advantages-card-content-wrapper">
                         <div class="advantages-card">
                             <img src="./images/icons/blocks.svg" alt="blocks" class="advantages-card-img">
                             <p class="advantages-card-text">Наши проекты уникальны, как и каждый клиент. Мы понимаем, что задачи в сфере онлайн-примерки одежды требуют индивидуального подхода. Поэтому мы создаем решения, которые адаптируются под ваши цели и позволяют клиентам получить наилучший опыт</p>
@@ -283,7 +321,7 @@
     </footer>
     <div class="overlay">
         <div class="popup-test">
-            <img src="./images/icons/cross.svg" alt="cross" class="popup-cross">
+            <img src="./images/icons/cross.svg" alt="cross" class="cross popup-cross">
             <form class="popup-test-form" action="">
                 <input class="popup-test-input" required placeholder="Введите ваше имя" type="text">
                 <input class="popup-test-input" required placeholder="Введите ваш email" type="text">
