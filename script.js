@@ -28,3 +28,29 @@ const showContent = () => {
 }
 
 showContent();
+
+const showPopup = (content, closeButton, openButton, overlay) => {
+        content = document.querySelector(content),
+        closeButton = document.querySelector(closeButton),
+        openButton = document.querySelectorAll(openButton),
+        overlay = document.querySelector(overlay)
+
+    openButton.forEach(btn => {
+        btn.addEventListener('click', () => {
+            content.classList.add('show-popup');
+            overlay.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        })
+
+        closeButton.addEventListener('click', () => {
+            content.classList.remove('show-popup');
+            document.body.style.overflow = '';
+            overlay.style.display = 'none';
+        })
+    })
+}
+
+showPopup('.popup-test', '.popup-cross', '.info-btn', '.overlay');
+showPopup('.popup-test', '.popup-cross', '.about-btn', '.overlay');
+showPopup('.popup-test', '.popup-cross', '.choose-btn', '.overlay');
+showPopup('.popup-test', '.popup-cross', '.advantages-btn', '.overlay');
