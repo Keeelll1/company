@@ -217,10 +217,16 @@ a{
 
 .info-image-wrapper{
     margin-top: 100px;
+    width: 100%;
+    height: 635px;
+    overflow: hidden;
+    border-radius: 32px;
 }
 
 .info-img{
     width: 100%;
+    position: relative;
+    top: -40px;
 }
 
 /* about-us */
@@ -601,7 +607,8 @@ a{
 .advantages-main-card-wrapper{
     width: 663px;
     height: 631px;
-    background: url(./images/background2.png) center no-repeat;
+    background: url(./images/background2.jpg) no-repeat;
+    background-position: -100px -90px;
     padding: 20px;
     display: flex;
     align-items: end;
@@ -832,17 +839,10 @@ a{
 
     .small-choose-item{
         width: 290px;
-    }   
-}
-
-@media (max-width: 1250px){
-    .choose-item-box{
-        width: 290px;
-        height: 270px;
     }
 
-    .small-choose-item{
-        width: 290px;
+    .info-image-wrapper{
+        height: 500px;
     }
 
     body{
@@ -890,6 +890,10 @@ a{
 
     .choose-custom-item{
         height: 240px;
+    }
+
+    .advantages-main-card-wrapper{
+        background-position: -200px -90px;
     }
 }
 
@@ -1042,6 +1046,10 @@ a{
     .about-item{
         width: 320px;
     }
+
+    .info-image-wrapper{
+        height: 400px;
+    }
 }
 
 @media (max-width: 800px){
@@ -1061,6 +1069,10 @@ a{
     .footer-top-content{
         flex-direction: column;
         gap: 20px;
+    }
+
+    .info-image-wrapper{
+        height: 300px;
     }
 }
 
